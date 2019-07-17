@@ -82,6 +82,23 @@ hr {
   background-color: #F22973;
   color: #FFFFFF;
 }
+#chat_paciente_content {
+  background-color: #FFFFFF;
+  display: none;
+  height: 91vh;
+  position: absolute;
+  z-index: 9;
+}
+#no_payment_chats {
+  background: url('../assets/img/immer-fondo.png') no-repeat 50% 50%;
+  background-size: cover;
+  color: #F22973;
+  height: 91vh;
+}
+.chatactive {
+  display: block;
+  background-color: red;
+}
 #container_my_kids {
   max-height: 400px;
   overflow-y: scroll;
