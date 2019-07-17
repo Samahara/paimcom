@@ -39,6 +39,22 @@ hr {
   margin-top: 1px;
   margin-bottom: 1px;
 }
+span.badge {
+  background-color: transparent;
+  border-radius: 100%;
+  display: inline-block!important;
+  margin-left: -2px;
+  padding: .3rem;
+  vertical-align: sub;
+}
+span.badge.confirm_success,
+span.badge.confirm_success {
+  background-color: #57B779;
+}
+span.badge.pend_success,
+span.badge.pend_success {
+  background-color: #F3AC20;
+}
 #accordionHistorialClinico .card-body {
   height: 432px;
   padding-left: 15px;
@@ -435,6 +451,10 @@ hr {
   color: #333333!important;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.notifications_mykids i.fa-calendar-alt,
+.notifications_mykids i.fa-comment-medical {
+  font-size: 	1.2rem;
 }
 .opacity-5 {
   color: #F2297375;
