@@ -465,6 +465,7 @@ hr {
   }
   #ficha_paciente_content .col-sectionright {
     height: auto;
+    margin-bottom: 10px;
     max-height: initial;
     width: 100%;
   }
