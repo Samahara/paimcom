@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Immer es una plataforma que te permite mejorar el lazo de comunicación con el pediatra de tu hijo.">
+    <meta name="author" content="Maqueta realizada por Samahara Fernández">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <title>Paciente immer friso</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbarPacienteImmer">
+      <a class="navbar-brand" href="#"><img src="assets/img/logo-immer.png" alt="Logo immer"> </a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-comment-medical"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-calendar-alt"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+        </li>
+        <li class="nav-item dropdown" id="dropdownMenuPaciente">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownPacienteImmer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="assets/img/ArturoHyeong.jpg" alt="Foto perfil paciente"><span> Arturo Hyeong Sánchez</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownPacienteImmer">
+            <a class="dropdown-item" href="#"><i class="fab fa-whatsapp"></i> Chat de ayuda</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-file-invoice-dollar"></i> Historial de pagos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid" id="immer_paciente_home">
+      <div class="row">
+        <div class="col-banner" style="padding: 20.2% 0;">
+          <div style="text-align: center">
+            <!-- <img width="110px"src="assets/img/bannerFriso.png" alt="bannerFriso"> -->
+          </div>
+        </div>
+        <div class="col-immer">
+          <div class="col-12 pb-5 pt-5">
+            <h1 class="color-immer">Hola <span>Arturo Hyeong Sánchez</span></h1>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6" id="home_section_1">
+                <div id="container_my_info">
+                  <div class="media mb-3">
+                    <div class="media-body">
+                      <h5 class="">Información de mi médico</h5>
+                      <h6 class="color-immer mb-1">Eugène Charles Apert</h6>
+                      <div class="media-info-paciente">
+                        <div><div class="med-info-text"><p class="mb-0">Dirección</p></div> <span>149, rue de Sèvres, Paris 15, France</span></div>
+                        <div><div class="med-info-text"><p class="mb-0">Celular</p></div> <span>55 13 01 21 08</span></div>
+                        <div><div class="med-info-text"><p class="mb-0">Correo</p></div> <span>immer.medical.doctor@gmail.com</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media mb-3 mt-3">
+                    <div class="media-body">
+                      <h5 class="">Mis contactos guardados</h5>
+                      <h6 class="color-immer mb-1">Principal</h6>
+                      <div class="media-info-paciente">
+                        <div><div class="med-info-text"><p class="mb-0">Nombre</p></div> <span>Arturo Hyeong Sánchez</span></div>
+                        <div><div class="med-info-text"><p class="mb-0">Celular</p></div> <span>55 13 01 21 08</span></div>
+                        <div><div class="med-info-text"><p class="mb-0">Correo</p></div> <span>immer.medical.paciente@gmail.com</span></div>
+                      </div>
+                      <h6 class="color-immer mb-1">Contacto 2</h6>
+                      <div class="media-info-paciente">
+                        <div><div class="med-info-text"><p class="mb-0">Nombre</p></div> <span>Ana Hernández Castillo</span></div>
+                        <div><div class="med-info-text"><p class="mb-0">Celular</p></div> <span>55 13 01 21 08</span></div>
+                        <div><div class="med-info-text"><p class="mb-0">Correo</p></div> <span>immer.medical.paciente@gmail.com</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6" id="home_section_2">
+                <h4 class="color-immer">Expedientes de mis hijos</h4>
+                <div class="" id="container_my_kids">
+                  <div class="media mb-3 mt-3" onclick="immerFicha()">
+                    <img src="assets/img/Rodrigo.jpg" class="align-self-center mr-1" alt="...">
+                    <div class="media-body">
+                      <h5 class="ml-2 mt-4">Rodrigo Hyeong Hernández</h5>
+                      <div class="ml-2 text-right color-immer opacity-5"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                  </div>
+                  <div class="media mb-3 mt-3" onclick="immerFicha()">
+                    <img src="assets/img/Valeria.jpg" class="align-self-center mr-1" alt="...">
+                    <div class="media-body">
+                      <h5 class="ml-2 mt-4">Valeria Hyeong Hernández</h5>
+                      <div class="ml-2 text-right color-immer opacity-5"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a79f95d4bd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>

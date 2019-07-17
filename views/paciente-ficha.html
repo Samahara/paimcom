@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Immer es una plataforma que te permite mejorar el lazo de comunicación con el pediatra de tu hijo.">
+    <meta name="author" content="Maqueta realizada por Samahara Fernández">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <title>Paciente immer friso</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbarPacienteImmer">
+      <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-immer.png" alt="Logo immer"> </a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-comment-medical"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-calendar-alt"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+        </li>
+        <li class="nav-item dropdown" id="dropdownMenuPaciente">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownPacienteImmer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="../assets/img/ArturoHyeong.jpg" alt="Foto perfil paciente"><span> Arturo Hyeong Sánchez</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownPacienteImmer">
+            <a class="dropdown-item" href="#"><i class="fab fa-whatsapp"></i> Chat de ayuda</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-file-invoice-dollar"></i> Historial de pagos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid" id="ficha_paciente_content">
+      <div class="row">
+
+        <div class="col-sectionleft">
+          <div id="ficha_section_1">
+            <div class="user_info_content mb-1">
+              <div class="back-page">
+                <a href="../index.html"><i class="fas fa-chevron-left color-immer"></i><i class="fas fa-chevron-left color-immer"></i> Regresar</a>
+              </div>
+              <div class="media">
+                <img src="../assets/img/Valeria.jpg" class="align-self-center mr-1 mb-1 mt-1 ml-1" alt="...">
+                <div class="media-body">
+                  <p class="mt-2">Valeria Hyeong Hernández</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-1" style="border: 3px solid #BC9537; height: 165px;">
+            </div>
+            <div class="" style="background-color: #1F3F85; height: 250px; width: 300px;">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sectionright">
+          <div id="ficha_section_2">
+            <ul class="nav nav-pills flex-row mb-1" id="pills-tab-menuPaciente" role="tablist">
+              <li class="nav-item flex-sm-fill">
+                <a class="nav-link active" id="pills-historial-clinico-tab" data-toggle="pill" href="#pills-historial-clinico" role="tab" aria-controls="pills-historial-clinico" aria-selected="true">Historial Clínico</a>
+              </li>
+              <li class="nav-item flex-sm-fill">
+                <a class="nav-link" id="pills-graficas-crecimiento-tab" data-toggle="pill" href="#pills-graficas-crecimiento" role="tab" aria-controls="pills-graficas-crecimiento" aria-selected="false">Gráficas de crecimiento</a>
+              </li>
+              <li class="nav-item flex-sm-fill">
+                <a class="nav-link" id="pills-friso-tab" data-toggle="pill" href="#pills-friso" role="tab" aria-controls="pills-friso" aria-selected="false">Próximamente</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent-menuPaciente">
+              <div class="tab-pane fade show active" id="pills-historial-clinico" role="tabpanel" aria-labelledby="pills-historial-clinico-tab">
+                <div class="accordion" id="accordionHistorialClinico">
+                  <div class="card mb-1">
+                    <div class="card-header pt-2 pb-2" id="headingOne">
+                      <p class="mb-0">
+                        <button class="btn btn-link collapsed p-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Cartilla de vacunación <i class="fas fa-chevron-down"></i>
+                        </button>
+                      </p>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionHistorialClinico">
+                      <div class="card-body pt-0 pb-2">
+                        <div class="row">
+                          <div class="col-12">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header pt-2 pb-2" id="headingTwo">
+                      <p class="mb-0">
+                        <button class="btn btn-link p-0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          Historial de consultas <i class="fas fa-chevron-down"></i>
+                        </button>
+                      </p>
+                    </div>
+                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionHistorialClinico">
+                      <div class="card-body pt-0 pb-2">
+                        <ul class="nav nav-tabs mb-2" id="myMedicalConsultation" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="consultasResume-tab" data-toggle="tab" href="#consultasResume" role="tab" aria-controls="consultasResume" aria-selected="true">Consultas</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="cirugiasResume-tab" data-toggle="tab" href="#cirugiasResume" role="tab" aria-controls="cirugiasResume" aria-selected="false">Cirugías</a>
+                          </li>
+                          <li class="nav-item ml-auto">
+                            <button type="button" class="btn nav-text pb-2 pt-2 pl-3 pr-0 mt-1 video-text"><i class="far fa-question-circle"></i> ¿Cómo solicitar una consulta física?</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="myMedicalConsultationContent">
+                          <div class="tab-pane fade show active" id="consultasResume" role="tabpanel" aria-labelledby="consultasResume-tab">
+                            <div class="row">
+                              <div class="col-3" role="tablist">
+                                <div class="list-group mb-2">
+                                  <button type="button" class="list-group-item" id="nueva_consulta-tab" data-toggle="tab" href="#nuevaConsulta" role="tab" aria-controls="nuevaConsulta" aria-selected="false"><i class="fas fa-calendar-alt color-immer" aria-hidden="true"></i> Nueva consulta</button>
+                                </div>
+                                <div class="list-group mb-2">
+                                  <button type="button" class="list-group-item" id="consulta_pend-tab" data-toggle="tab" href="#consulta_pend" role="tab" aria-controls="consulta_pend" aria-selected="false"><i class="fas fa-calendar-alt color-immer" aria-hidden="true"></i> Consulta pendiente</button>
+                                </div>
+                                <div class="list-group mb-2">
+                                  <button type="button" class="list-group-item" id="consulta_confirm-tab" data-toggle="tab" href="#consulta_confirm" role="tab" aria-controls="consulta_confirm" aria-selected="false"><i class="fas fa-calendar-alt color-immer" aria-hidden="true"></i> Próxima consulta</button>
+                                </div>
+                                <div class="list-group" id="list-consultation">
+                                  <button type="button" class="list-group-item" id="consultationResume-tab" data-toggle="tab" href="#consultationResume" role="tab" aria-controls="consultationResume" aria-selected="false"><i class="fas fa-file-medical"></i> Consulta <span>31/01/2019</span></button>
+                                  <!-- Quitar al empezar a conectar -->
+                                  <button type="button" class="list-group-item" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false"><i class="fas fa-file-medical"></i> Consulta <span>31/01/2019</span></button>
+                                </div>
+                              </div>
+                              <div class="col-9">
+                                <div class="tab-content">
+                                  <div class="tab-pane" id="nuevaConsulta" role="tabpanel" aria-labelledby="nuevaConsulta-tab">
+                                    <div class="row">
+                                      <div class="back-page col-2 mb-4">
+                                        <a href="#"><i class="fas fa-chevron-left color-immer"></i><i class="fas fa-chevron-left color-immer"></i> Regresar</a>
+                                      </div>
+                                      <div class="col-7 mb-4 text-center">
+                                        <h5 class="mb-0 color-immer">Seleccione fecha y hora</h5>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-8">
+                                        <div id="calendar">
+                                          <div class="col-12">
+                                            <div class="row">
+                                              <div class="col-6 title-calendar">
+                                                <p class="mb-2">Enero 2019</p>
+                                              </div>
+                                              <div class="col-6 text-right nav-calendar">
+                                                <button type="button" name="button"><i class="fas fa-chevron-left color-immer"></i></button>
+                                                <button type="button" name="button"><i class="fas fa-chevron-right color-immer"></i></button>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-auto" style="font-weight:600;">D<span>om</span></div>
+                                              <div class="col-auto" style="font-weight:600;">L<span>un</span></div>
+                                              <div class="col-auto" style="font-weight:600;">M<span>ar</span></div>
+                                              <div class="col-auto" style="font-weight:600;">M<span>ié</span></div>
+                                              <div class="col-auto" style="font-weight:600;">J<span>ue</span></div>
+                                              <div class="col-auto" style="font-weight:600;">V<span>ie</span></div>
+                                              <div class="col-auto" style="font-weight:600;">S<span>áb</span></div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-auto dayjob"><p>1</p></div>
+                                              <div class="col-auto"><p>2</p></div>
+                                              <div class="col-auto dayjob"><p>3</p></div>
+                                              <div class="col-auto"><p>4</p></div>
+                                              <div class="col-auto"><p>5</p></div>
+                                              <div class="col-auto dayjob"><p>6</p></div>
+                                              <div class="col-auto dayjob"><p>7</p></div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-auto dayjob"><p>8</p></div>
+                                              <div class="col-auto"><p>9</p></div>
+                                              <div class="col-auto dayjob"><p>10</p></div>
+                                              <div class="col-auto"><p>11</p></div>
+                                              <div class="col-auto"><p>12</p></div>
+                                              <div class="col-auto dayjob"><p>13</p></div>
+                                              <div class="col-auto dayjob"><p>14</p></div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-auto dayjob"><p>15</p></div>
+                                              <div class="col-auto"><p>16</p></div>
+                                              <div class="col-auto dayjob active"><p>17</p></div>
+                                              <div class="col-auto"><p>18</p></div>
+                                              <div class="col-auto"><p>19</p></div>
+                                              <div class="col-auto dayjob"><p>20</p></div>
+                                              <div class="col-auto dayjob"><p>21</p></div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-auto dayjob"><p>22</p></div>
+                                              <div class="col-auto"><p>23</p></div>
+                                              <div class="col-auto dayjob"><p>24</p></div>
+                                              <div class="col-auto"><p>25</p></div>
+                                              <div class="col-auto"><p>26</p></div>
+                                              <div class="col-auto dayjob"><p>27</p></div>
+                                              <div class="col-auto dayjob"><p>28</p></div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-auto dayjob"><p>29</p></div>
+                                              <div class="col-auto"><p>30</p></div>
+                                              <div class="col-auto dayjob"><p>31</p></div>
+                                              <div class="col-auto"><p>1</p></div>
+                                              <div class="col-auto"><p>2</p></div>
+                                              <div class="col-auto dayjob"><p>3</p></div>
+                                              <div class="col-auto dayjob"><p>4</p></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-4 pl-0">
+                                        <div id="hours_calendar">
+                                          <div class="col-12">
+                                            <p class="mb-1"><strong>martes, 17 enero</strong></p>
+                                          </div>
+                                          <div class="col-12">
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#dateconfirmModal">9:00 am</button>
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#dateconfirmModal">9:30 am</button>
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#dateconfirmModal">10:00 am</button>
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#dateconfirmModal">10:30 am</button>
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#dateconfirmModal">11:00 am</button>
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#dateconfirmModal">11:30 am</button>
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#dateconfirmModal">12:00 pm</button>
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#dateconfirmModal">12:30 pm</button>
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#dateconfirmModal">1:00 pm</button>
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#dateconfirmModal">1:30 pm</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane" id="consultationResume" role="tabpanel" aria-labelledby="consultationResume-tab">
+                                    <div class="row">
+                                      <div class="col-3 mb-4">
+                                        <p class="mb-0 color-immer title-resume-consultation">Talla</p>
+                                        <p class="mb-0">72 <span>cm</span></p>
+                                      </div>
+                                      <div class="col-3 mb-4">
+                                        <p class="mb-0 color-immer title-resume-consultation">Peso</p>
+                                        <p class="mb-0">9.2 <span>kg</span></p>
+                                      </div>
+                                      <div class="col-3 mb-4">
+                                        <p class="mb-0 color-immer title-resume-consultation">C. Craneal</p>
+                                        <p class="mb-0">46 <span>cm</span></p>
+                                      </div>
+                                      <div class="col-3 mb-4">
+                                        <p class="mb-0 color-immer title-resume-consultation">I.M.C.</p>
+                                        <p class="mb-0">17.74</p>
+                                      </div>
+                                      <div class="col-6">
+                                        <p class="mb-0 color-immer title-resume-consultation">Diagnóstico</p>
+                                        <p class="mb-0">Vestibulum rutrum ipsum non nulla efficitur, quis suscipit est aliquam.</p>
+                                      </div>
+                                      <div class="col-6">
+                                        <p class="mb-0 color-immer title-resume-consultation">Tratamiento</p>
+                                        <div class="row">
+                                          <div class="col-6 pr-0">
+                                            <p class="mb-0">VIVAMUS</p>
+                                            <hr>
+                                          </div>
+                                          <div class="col-6 pl-0">
+                                            <p class="mb-0">c/ X hrs</p>
+                                            <hr>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-12">
+                                            <p class="mb-0">Vivamus pulvinar elit nunc, eget faucibus libero egestas quis.</p>
+                                            <hr>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Quitar al empezar a conectar -->
+                                  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                                    <div class="row">
+                                      <div class="col-3 mb-4">
+                                        <p class="mb-0 color-immer title-resume-consultation">Talla</p>
+                                        <p class="mb-0">67 <span>cm</span></p>
+                                      </div>
+                                      <div class="col-3 mb-4">
+                                        <p class="mb-0 color-immer title-resume-consultation">Peso</p>
+                                        <p class="mb-0">8 <span>kg</span></p>
+                                      </div>
+                                      <div class="col-3 mb-4">
+                                        <p class="mb-0 color-immer title-resume-consultation">C. Craneal</p>
+                                        <p class="mb-0">44 <span>cm</span></p>
+                                      </div>
+                                      <div class="col-3 mb-4">
+                                        <p class="mb-0 color-immer title-resume-consultation">I.M.C.</p>
+                                        <p class="mb-0">17.82</p>
+                                      </div>
+                                      <div class="col-6">
+                                        <p class="mb-0 color-immer title-resume-consultation">Diagnóstico</p>
+                                        <p class="mb-0">Vestibulum rutrum ipsum non nulla efficitur, quis suscipit est aliquam.</p>
+                                      </div>
+                                      <div class="col-6">
+                                        <p class="mb-0 color-immer title-resume-consultation">Tratamiento</p>
+                                        <div class="row">
+                                          <div class="col-6 pr-0">
+                                            <p class="mb-0">VIVAMUS</p>
+                                            <hr>
+                                          </div>
+                                          <div class="col-6 pl-0">
+                                            <p class="mb-0">c/ X hrs</p>
+                                            <hr>
+                                          </div>
+                                          <div class="col-6 pr-0">
+                                            <p class="mb-0">VIVAMUS</p>
+                                            <hr>
+                                          </div>
+                                          <div class="col-6 pl-0">
+                                            <p class="mb-0">c/ X hrs</p>
+                                            <hr>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-12">
+                                            <p class="mb-0">Vivamus pulvinar elit nunc, eget faucibus libero egestas quis.</p>
+                                            <hr>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane" id="consulta_pend" role="tabpanel" aria-labelledby="consulta_pend-tab">
+                                    <div class="row">
+                                      <div class="col-12 mb-5 mt-5">
+                                        <h5 class="color-immer text-uppercase">Tu consulta aún no es confirmada</h5>
+                                      </div>
+                                      <div class="col-12 mb-5">
+                                        <p class="mb-0 font-weight-bold">Hemos notificado a tu médico que has solicitado una nueva consulta física.</p>
+                                      </div>
+                                      <div class="col-12 consulta_pend_resume">
+                                        <div class="row align-items-center">
+                                          <div class="col-auto mb-3">
+                                            <div class="input-group">
+                                              <i class="fas fa-calendar-day"></i>
+                                              <p class="mb-0">17/01/2019</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                          <div class="col-auto mb-3">
+                                            <div class="input-group">
+                                              <i class="far fa-clock"></i>
+                                              <p class="mb-0">12:00 pm</p>
+                                              <p class="mb-0 ml-1 mr-1">-</p>
+                                              <p class="mb-0">12:30 pm</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                          <div class="col-auto mb-3">
+                                            <div class="input-group">
+                                              <i class="fas fa-child"></i>
+                                              <p class="mb-0">Rodrigo Hyeong Hernández</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane" id="consulta_confirm" role="tabpanel" aria-labelledby="consulta_confirm-tab">
+                                    <div class="row">
+                                      <div class="col-12 mb-5 mt-5">
+                                        <h5 class="color-immer text-uppercase">Tu médico te espera para tu próxima consulta</h5>
+                                      </div>
+                                      <div class="col-12 mb-5">
+                                        <p class="mb-0 font-weight-bold">Tu consulta ha sido confirmada.</p>
+                                      </div>
+                                      <div class="col-12 consulta_pend_resume">
+                                        <div class="row align-items-center">
+                                          <div class="col-auto mb-3">
+                                            <div class="input-group">
+                                              <i class="fas fa-map-marker-alt"></i>
+                                              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                          <div class="col-auto mb-3">
+                                            <div class="input-group">
+                                              <i class="fas fa-calendar-day"></i>
+                                              <p class="mb-0">17/01/2019</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                          <div class="col-auto mb-3">
+                                            <div class="input-group">
+                                              <i class="far fa-clock"></i>
+                                              <p class="mb-0">12:00 pm</p>
+                                              <p class="mb-0 ml-1 mr-1">-</p>
+                                              <p class="mb-0">12:30 pm</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                          <div class="col-auto mb-3">
+                                            <div class="input-group">
+                                              <i class="fas fa-child"></i>
+                                              <p class="mb-0">Rodrigo Hyeong Hernández</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="cirugiasResume" role="tabpanel" aria-labelledby="cirugiasResume-tab"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-graficas-crecimiento" role="tabpanel" aria-labelledby="pills-graficas-crecimiento-tab">
+                <div class="col-12 pt-2 pb-2">
+                  <ul class="nav nav-tabs" id="myGraphics" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="pesoxedad-tab" data-toggle="tab" href="#pesoxedad" role="tab" aria-controls="pesoxedad" aria-selected="true">Peso x Edad</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="ccranealxedad-tab" data-toggle="tab" href="#ccranealxedad" role="tab" aria-controls="ccranealxedad" aria-selected="false">Circunferencia Craneal x Edad</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="estaturaxedad-tab" data-toggle="tab" href="#estaturaxedad" role="tab" aria-controls="estaturaxedad" aria-selected="false">Estatura x Edad</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12">
+                  <div class="tab-content" id="myGraphicsContent">
+                    <div class="tab-pane fade show active" id="pesoxedad" role="tabpanel" aria-labelledby="pesoxedad-tab">
+                      <div class="text-center container_info_graphics">
+                        <svg width="780" height="450" style="background: #f2297330;"></svg>
+                        <div class="mt-2 col-12 text-center info-title_graphics color-immer">
+                          <div class="row">
+                            <div class="col-2">Fecha</div>
+                            <div class="col-2">Edad</div>
+                            <div class="col-2">Peso</div>
+                            <div class="col-2">Altura</div>
+                            <div class="col-2">I.M.C.</div>
+                            <div class="col-2">C. Craneal</div>
+                          </div>
+                        </div>
+                        <div class="mt-2 col-12 text-center info-text_graphics">
+                          <div class="row">
+                            <div class="col-2">08/01/2019</div>
+                            <div class="col-2">12 <span>meses</span></div>
+                            <div class="col-2">9.2 <span>kg</span></div>
+                            <div class="col-2">72 <span>cm</span></div>
+                            <div class="col-2">17.75</div>
+                            <div class="col-2">46 <span>cm</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="ccranealxedad" role="tabpanel" aria-labelledby="ccranealxedad-tab">
+                      <div class="text-center container_info_graphics">
+                        <svg width="780" height="450" style="background: #f2297330;"></svg>
+                        <div class="mt-2 col-12 text-center info-title_graphics color-immer">
+                          <div class="row">
+                            <div class="col-2">Fecha</div>
+                            <div class="col-2">Edad</div>
+                            <div class="col-2">Peso</div>
+                            <div class="col-2">Altura</div>
+                            <div class="col-2">I.M.C.</div>
+                            <div class="col-2">C. Craneal</div>
+                          </div>
+                        </div>
+                        <div class="mt-2 col-12 text-center info-text_graphics">
+                          <div class="row">
+                            <div class="col-2">08/01/2019</div>
+                            <div class="col-2">12 <span>meses</span></div>
+                            <div class="col-2">9.2 <span>kg</span></div>
+                            <div class="col-2">72 <span>cm</span></div>
+                            <div class="col-2">17.75</div>
+                            <div class="col-2">46 <span>cm</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="estaturaxedad" role="tabpanel" aria-labelledby="estaturaxedad-tab">
+                      <div class="text-center container_info_graphics">
+                        <svg width="780" height="450" style="background: #f2297330;"></svg>
+                        <div class="mt-2 col-12 text-center info-title_graphics color-immer">
+                          <div class="row">
+                            <div class="col-2">Fecha</div>
+                            <div class="col-2">Edad</div>
+                            <div class="col-2">Peso</div>
+                            <div class="col-2">Altura</div>
+                            <div class="col-2">I.M.C.</div>
+                            <div class="col-2">C. Craneal</div>
+                          </div>
+                        </div>
+                        <div class="mt-2 col-12 text-center info-text_graphics">
+                          <div class="row">
+                            <div class="col-2">08/01/2019</div>
+                            <div class="col-2">12 <span>meses</span></div>
+                            <div class="col-2">9.2 <span>kg</span></div>
+                            <div class="col-2">72 <span>cm</span></div>
+                            <div class="col-2">17.75</div>
+                            <div class="col-2">46 <span>cm</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-friso" role="tabpanel" aria-labelledby="pills-friso-tab"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="dateconfirmModal" tabindex="-1" role="dialog" aria-labelledby="modalConfirmHours" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header col-12 pb-2 pt-2">
+            <p class="mb-0">Solicitud de consulta</p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-12">
+            <div class="modal-title mb-4" id="modalConfirmHours">
+              <h5>Consulta Física</h5>
+            </div>
+            <div>
+              <div class="row align-items-center">
+                <div class="col-auto mb-2">
+                  <div class="input-group">
+                    <i class="fas fa-calendar-day"></i>
+                    <p class="mb-0">17/01/2019</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-auto mb-2">
+                  <div class="input-group">
+                    <i class="far fa-clock"></i>
+                    <p class="mb-0">12:00 pm</p>
+                    <p class="mb-0 ml-1 mr-1">-</p>
+                    <p class="mb-0">12:30 pm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-auto mb-2">
+                  <div class="input-group">
+                    <i class="fas fa-child"></i>
+                    <p class="mb-0">Rodrigo Hyeong Hernández</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer p-2">
+            <button type="button" class="btn cancel" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn save">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a79f95d4bd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+  </body>
+</html>
