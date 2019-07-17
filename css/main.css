@@ -602,6 +602,9 @@ span.badge.pend_success {
     font-size: 1.3rem;
     text-align: center;
   }
+  .col-immer > div.col-12.pb-5.pt-5 {
+    padding: 2rem 0.9375rem 1rem!important;
+  }
   .info-title_graphics.color-immer .col-2,
   .info-text_graphics .col-2 {
     max-width: calc(100%/3);
@@ -616,8 +619,8 @@ span.badge.pend_success {
     flex-direction: row;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: .25rem;
+    padding-right: .25rem;
   }
   .
   .user_info_content,
