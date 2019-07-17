@@ -435,3 +435,146 @@ hr {
   font-size: 	0.8125rem;
   vertical-align: text-bottom;
 }
+
+@media (max-width: 767.98px) {
+  #container_my_info h5 {
+    font-size: 1.2rem;
+  }
+  #ficha_paciente_content {
+    height: auto;
+    max-height: initial;
+  }
+  #ficha_paciente_content .col-sectionleft {
+    height: auto;
+    max-height: initial;
+    width: 100%;
+  }
+  #ficha_paciente_content .col-sectionright {
+    height: auto;
+    max-height: initial;
+    width: 100%;
+  }
+  #ficha_section_2 {
+    height: auto;
+    max-height: initial;
+}
+  #ficha_section_1 .media p {
+    text-align: center;
+  }
+  #ficha_section_1 > div:nth-child(3) {
+    margin: 0 auto;
+  }
+  #immer_paciente_home .col-banner,
+  #dropdownPacienteImmer > span {
+    display: none;
+  }
+  #immer_paciente_home .col-immer {
+    width: 100%;
+    height: auto;
+  }
+  #dropdownMenuPaciente .dropdown-menu {
+    left: auto;
+    position: absolute;
+    right: 0;
+  }
+  #home_section_1 {
+    border-right: none;
+    height: auto;
+    max-height: initial;
+    padding: 10px 30px;
+  }
+  #home_section_1 .media-info-paciente div.med-info-text {
+    display: block;
+  }
+  #home_section_2 {
+    height: auto;
+    max-height: initial;
+    padding: 10px 30px;
+  }
+  #myGraphics .nav-link,
+  #myMedicalConsultation .nav-link {
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    color: #d3d3d3;
+  }
+  #myGraphics .nav-link.active, #myMedicalConsultation .nav-link.active {
+    border-color: #f22973 #f22973!important;
+  }
+  #myGraphics .nav-item,
+  #myMedicalConsultation .nav-item {
+    width: 100%;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+  #myGraphicsContent .tab-pane .container_info_graphics {
+    height: auto;
+  }
+  #pills-tabContent-menuPaciente {
+    height: auto;
+    max-height: initial;
+}
+  #pills-graficas-crecimiento {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05);
+    height: auto;
+  }
+  #pills-friso {
+    height: 520px;
+  }
+  #pills-tab-menuPaciente {
+    font-size: 1.25rem;
+    height: auto;
+    text-align: center;
+  }
+  #pills-tab-menuPaciente > li {
+    width: 100%;
+  }
+  #pills-tab-menuPaciente .nav-link {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05);
+    color: #F22973;
+    padding: 12.8px 16px;
+  }
+  .col-immer h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .info-title_graphics.color-immer .col-2,
+  .info-text_graphics .col-2 {
+    max-width: calc(100%/3);
+    flex: initial;
+    padding: 0;
+  }
+  #pesoxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(4),
+  #pesoxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(4),
+  #pesoxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(5),
+  #pesoxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(5),
+  #pesoxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(6),
+  #pesoxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(6),
+  #ccranealxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(3),
+  #ccranealxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(3),
+  #ccranealxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(4),
+  #ccranealxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(4),
+  #ccranealxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(5),
+  #ccranealxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(5),
+  #estaturaxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(3),
+  #estaturaxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(3),
+  #estaturaxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(5),
+  #estaturaxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(5),
+  #estaturaxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(6),
+  #estaturaxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(6) {
+    display: none;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+}
