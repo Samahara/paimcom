@@ -317,15 +317,22 @@ hr {
   height: 8.67579908675799vh;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
-#nueva_consulta-tab,
-#consulta_pend-tab,
-#consulta_confirm-tab {
+#nueva_consulta-tab  {
   border: 1px solid #6A6A6A;
   color: #6A6A6A;
   font-size: 0.9375rem;
   letter-spacing: 1.8px;
   outline: none;
   padding: 10px 6px;
+}
+#consulta_pend-tab,
+#consulta_confirm-tab {
+    border: 1px solid #F22973;
+    color: #F22973;
+    font-size: 0.9375rem;
+    letter-spacing: 1.8px;
+    outline: none;
+    padding: 10px 6px;
 }
 #nueva_consulta-tab i,
 #consulta_pend-tab i,
@@ -437,8 +444,14 @@ hr {
 }
 
 @media (max-width: 767.98px) {
+  #accordionHistorialClinico .card-body {
+    height: auto;
+  }
   #container_my_info h5 {
     font-size: 1.2rem;
+  }
+  #consulta_confirm .consulta_pend_resume > div:nth-child(1) p {
+    width: 91%;
   }
   #ficha_paciente_content {
     height: auto;
@@ -447,6 +460,7 @@ hr {
   #ficha_paciente_content .col-sectionleft {
     height: auto;
     max-height: initial;
+    padding-right: 10px;
     width: 100%;
   }
   #ficha_paciente_content .col-sectionright {
@@ -454,15 +468,19 @@ hr {
     max-height: initial;
     width: 100%;
   }
-  #ficha_section_2 {
+  #ficha_section_1 {
     height: auto;
     max-height: initial;
-}
+  }
   #ficha_section_1 .media p {
     text-align: center;
   }
   #ficha_section_1 > div:nth-child(3) {
     margin: 0 auto;
+  }
+  #ficha_section_2 {
+    height: auto;
+    max-height: initial;
   }
   #immer_paciente_home .col-banner,
   #dropdownPacienteImmer > span {
@@ -490,6 +508,12 @@ hr {
     height: auto;
     max-height: initial;
     padding: 10px 30px;
+  }
+  #hours_calendar {
+    border-left: none;
+    height: auto;
+    margin-top: 10px;
+    max-height: initial;
   }
   #myGraphics .nav-link,
   #myMedicalConsultation .nav-link {
@@ -546,6 +570,22 @@ hr {
     flex: initial;
     padding: 0;
   }
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  .
+  .user_info_content,
+  #ficha_section_1 > div:nth-child(2) {
+    margin-bottom: 10px!important;
+  }
   #pesoxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(4),
   #pesoxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(4),
   #pesoxedad div.mt-2.col-12.text-center.info-title_graphics.color-immer > div > div:nth-child(5),
@@ -566,15 +606,15 @@ hr {
   #estaturaxedad div.mt-2.col-12.text-center.info-text_graphics > div > div:nth-child(6) {
     display: none;
   }
-  .navbar-brand {
-    margin-right: 0;
+  #home_section_2 .media:hover img {
+    height: 80px;
+    width: 80px;
   }
-  .navbar-nav {
-    -ms-flex-direction: row;
-    flex-direction: row;
+  #home_section_2 .media:hover .media-body h5 {
+    font-size: 1.25rem;
   }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: .5rem;
-    padding-right: .5rem;
+  #home_section_2 .media:hover .media-body i {
+    color: #F22973;
+    font-size: 0.875rem;
   }
 }
