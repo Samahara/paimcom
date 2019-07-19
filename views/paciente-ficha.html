@@ -15,8 +15,9 @@
     <nav class="navbar navbar-expand-lg navbar-light" id="navbarPacienteImmer">
       <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-immer.png" alt="Logo immer"> </a>
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item" onclick="chatImmer()">
-          <a class="nav-link" href="#"><i class="fas fa-comment-medical"><span class="badge"></span></i></a>
+        <li class="nav-item">
+          <!-- onclick="chatImmer()" -->
+          <a class="nav-link" data-toggle="collapse" href="#chat_paciente_content" role="button" aria-expanded="false" aria-controls="chat_paciente_content"><i class="fas fa-comment-medical"><span class="badge"></span></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fas fa-calendar-alt"><span class="badge pend_success"></span></i></a>
@@ -37,9 +38,9 @@
         </li>
       </ul>
     </nav>
-    <div class="container-fluid" id="chat_paciente_content">
+    <div class="container-fluid collapse" id="chat_paciente_content">
       <div class="row">
-        <div class="col-12 text-center pt-5 pb-5" id="no_payment_chats">
+        <div class="col-12 text-center pt-1 pb-1 d-none" id="no_payment_chats">
           <h2>¡Conoce los beneficios de ser miembro en immer!</h2>
           <div class="row">
             <div class="col-12 col-md-6">
@@ -49,11 +50,531 @@
             </div>
           </div>
         </div>
-        <div class="col-4" id="historial_chats">
-
-        </div>
-        <div class="col-8" id="content_chats">
-
+        <div class="col-12 pt-2 pb-2" id="payment_chats">
+          <div class="row">
+            <div class="col-12 col-md-4" id="historial_chats">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="mb-2" type="button" id="v-pills-nuevoChat-tab" data-toggle="pill" href="#v-pills-nuevoChat" role="tab" aria-controls="v-pills-home" aria-selected="true" name="button">
+                  <i class="fas fa-user-md color-immer"></i> Nuevo chat
+                </button>
+                <button class="chat-open active show" type="button" name="button" id="v-pills-chat_active-tab" data-toggle="pill" href="#v-pills-chat_active" role="tab" aria-controls="v-pills-chat_active" aria-selected="false">
+                  <i class="fas fa-notes-medical"></i> Nuevo padecimiento
+                </button>
+                <button class="chat-close" type="button" name="button" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                  <i class="fas fa-file-medical"></i> Seguimiento
+                </button>
+                <button class="chat-close" type="button" name="button" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                  <i class="fas fa-file-medical"></i> Nuevo padecimiento
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-8" id="content_chats">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade" id="v-pills-nuevoChat" role="tabpanel" aria-labelledby="v-pills-nuevoChat-tab">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="col-12 p-0 mt-2">
+                        <label class="color-immer" for="selectTypeChat">Seleccionar tipo de consulta</label>
+                        <select id="selectTypeChat" class="custom-select">
+                          <option selected></option>
+                          <option value="1">Nuevo padecimiento</option>
+                          <option value="2">Seguimiento</option>
+                        </select>
+                      </div>
+                      <div class="col-12 p-0 d-none mt-2" id="nuevo_padecimiento_form">
+                        <form>
+                          <label class="color-immer">¿Presenta algún síntoma?</label>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma1">
+                                <label class="custom-control-label" for="sintoma1">Fiebre</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma2">
+                                <label class="custom-control-label" for="sintoma2">Tos</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma3">
+                                <label class="custom-control-label" for="sintoma3">Congestión nasal</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma4">
+                                <label class="custom-control-label" for="sintoma4">Garganta irritada</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma5">
+                                <label class="custom-control-label" for="sintoma5">Dolor de oídos</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma6">
+                                <label class="custom-control-label" for="sintoma6">Vómito</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma7">
+                                <label class="custom-control-label" for="sintoma7">Diarrea</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma8">
+                                <label class="custom-control-label" for="sintoma8">Dolor abdominal</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma9">
+                                <label class="custom-control-label" for="sintoma9">Dolor de cabeza</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma10">
+                                <label class="custom-control-label" for="sintoma10">Sarpullido</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma11">
+                                <label class="custom-control-label" for="sintoma11">Respiración con dificultad</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 mb-1">
+                              <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="sintoma5">
+                                <label class="custom-control-label" for="sintoma5"><input type="text" class="form-control text-left"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                              <input type="number" class="form-control" id="inlineFormInputName" placeholder="¿Días?">
+                            </div>
+                          </div>
+                          <label class="color-immer mt-3">¿Esta administrando algún medicamento?</label>
+                          <div class="form-row align-items-center">
+                            <div class="col-12 mb-1">
+                              <input type="text" class="form-control text-left">
+                            </div>
+                          </div>
+                          <label class="color-immer mt-3">Comentarios</label>
+                          <div class="form-row align-items-center">
+                            <div class="col-12 mb-1">
+                              <input type="text" class="form-control text-left">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-12 mt-3 text-right">
+                              <button type="submit" class="btn save"><i class="fas fa-notes-medical"></i> Iniciar chat</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-12 p-0 mt-2" id="nuevo_seguimiento_form">
+                        <form>
+                          <label class="color-immer">¿Cuál es tu pregunta?</label>
+                          <div class="form-row align-items-center">
+                            <div class="col-12 mb-1">
+                              <input type="text" class="form-control text-left">
+                            </div>
+                          </div>
+                          <div class="form-row align-items-center">
+                            <div class="col-12 mt-3 text-right">
+                              <button type="submit" class="btn save"><i class="fas fa-notes-medical"></i> Iniciar chat</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade active show" id="v-pills-chat_active" role="tabpanel" aria-labelledby="v-pills-chat_active-tab">
+                  <div class="col-12 p-0" id="nuevo_padecimiento_resume">
+                    <div class="row">
+                      <div>
+                        <div class="col-12 new_chat_title">
+                          <div class="row">
+                            <div class="col-10">
+                              <p class="mb-0 p-2">Chat del <span>31/01/2019</span></p>
+                            </div>
+                            <div class="col-2 text-right">
+                              <button class="btn px-1" type="button" data-toggle="collapse" data-target="#collapseInfoConsultaChat" aria-expanded="false" aria-controls="collapseInfoConsultaChat">
+                                <i class="fas fa-user-md"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="collapseInfoConsultaChat">
+                          <div class="card card-body">
+                            <div class="col-12">
+                              <p class="mb-1 color-immer">¿Presenta algún síntoma?</p>
+                              <div class="sintomas_resume row mb-2">
+                                <div class="col-8">
+                                  <p class="mb-0">Fiebre</p>
+                                </div>
+                                <div class="col-4 text-right">
+                                  <p class="mb-0">X <span>días</span></p>
+                                </div>
+                                <div class="col-8">
+                                  <p class="mb-0">Tos</p>
+                                </div>
+                                <div class="col-4 text-right">
+                                  <p class="mb-0">X <span>días</span></p>
+                                </div>
+                                <div class="col-8">
+                                  <p class="mb-0">Congestión nasal</p>
+                                </div>
+                                <div class="col-4 text-right">
+                                  <p class="mb-0">X <span>días</span></p>
+                                </div>
+                                <div class="col-8">
+                                  <p class="mb-0">Garganta irritada</p>
+                                </div>
+                                <div class="col-4 text-right">
+                                  <p class="mb-0">X <span>días</span></p>
+                                </div>
+                              </div>
+                              <p class="mb-1 color-immer">¿Esta administrando algún medicamento?</p>
+                              <div class="sintomas_resume mb-2">
+                                <p class="mb-0">Vestibulum rutrum ipsum non nulla efficitur, quis suscipit est aliquam.</p>
+                              </div>
+                              <p class="mb-1 color-immer">Comentarios</p>
+                              <div class="sintomas_resume">
+                                <p class="mb-0">Vestibulum rutrum ipsum non nulla efficitur, quis suscipit est aliquam.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 new_chat_content">
+                          <div class="media user_answer mt-2">
+                            <div class="media-body mr-3">
+                              <span class="tail-container"></span>
+                              <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                          <div class="media user_question mt-2">
+                            <img src="../assets/img/EugeneAPert.png" class="align-self-start" alt="...">
+                            <div class="media-body ml-3">
+                              <span class="tail-container"></span>
+                              <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                          <div class="media user_answer mt-2">
+                            <div class="media-body mr-3">
+                              <span class="tail-container"></span>
+                              <p>Donec sed odio dui. </p>
+                            </div>
+                          </div>
+                          <div class="media user_question mt-2">
+                            <img src="../assets/img/EugeneAPert.png" class="align-self-start" alt="...">
+                            <div class="media-body ml-3">
+                              <span class="tail-container"></span>
+                              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 new_chat_message_content">
+                          <div class="form-row">
+                            <div class="col-md-10 pt-2">
+                              <textarea class="" name="name" rows="1"></textarea>
+                            </div>
+                            <div class="col-md-1 text-center">
+                              <button class="btn px-1 pt-2 pb-0" type="submit"><i class="far fa-paper-plane"></i></button>
+                            </div>
+                            <div class="custom-customFile col-md-1 text-center">
+                              <label class="px-1 pt-2 pb-0 cursor-po" for="customFile"><i class="fas fa-paperclip"></i></label>
+                              <input type="file" class="custom-file-input" id="customFile">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <div class="col-12 p-0" id="nuevo_seguimiento_resume">
+                    <div class="row">
+                      <div>
+                        <div class="col-12 new_chat_title">
+                          <div class="row">
+                            <div class="col-10">
+                              <p class="mb-0 p-2">Chat del <span>29/01/2019</span></p>
+                            </div>
+                            <div class="col-2 text-right">
+                              <button class="btn px-1" type="button" data-toggle="collapse" data-target="#collapseInfoConsultaChat" aria-expanded="false" aria-controls="collapseInfoConsultaChat">
+                                <i class="fas fa-user-md"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="collapseInfoConsultaChat">
+                          <div class="card card-body">
+                            <div class="col-12">
+                              <p class="mb-1 color-immer">¿Cuál es tu pregunta?</p>
+                              <div class="sintomas_resume mb-2">
+                                <p class="mb-0">Vestibulum rutrum ipsum non nulla efficitur, quis suscipit est aliquam.</p>
+                              </div>
+                              <h5 class="mb-1 color-immer mb-2">Consulta relacionada</h5>
+                              <div class="sintomas_resume mb-2">
+                                <p class="mb-0 color-immer title-resume-consultation">Diagnóstico</p>
+                                <p class="mb-0">Vestibulum rutrum ipsum non nulla efficitur, quis suscipit est aliquam.</p>
+                              </div>
+                              <p class="mb-0 color-immer title-resume-consultation">Tratamiento</p>
+                              <div class="row mb-2">
+                                <div class="col-6 pr-0">
+                                  <p class="mb-0">VIVAMUS</p>
+                                  <hr>
+                                </div>
+                                <div class="col-6 pl-0 text-right">
+                                  <p class="mb-0">c/ X hrs</p>
+                                  <hr>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <p class="mb-0">Vivamus pulvinar elit nunc, eget faucibus libero egestas quis.</p>
+                                  <hr>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 new_chat_content">
+                          <div class="media user_answer mt-2">
+                            <div class="media-body mr-3">
+                              <span class="tail-container"></span>
+                              <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                          <div class="media user_question mt-2">
+                            <img src="../assets/img/EugeneAPert.png" class="align-self-start" alt="...">
+                            <div class="media-body ml-3">
+                              <span class="tail-container"></span>
+                              <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                          <div class="media user_answer mt-2">
+                            <div class="media-body mr-3">
+                              <span class="tail-container"></span>
+                              <p>Donec sed odio dui. </p>
+                            </div>
+                          </div>
+                          <div class="media user_question mt-2">
+                            <img src="../assets/img/EugeneAPert.png" class="align-self-start" alt="...">
+                            <div class="media-body ml-3">
+                              <span class="tail-container"></span>
+                              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                            </div>
+                          </div>
+                          <div class="media user_answer mt-2">
+                            <div class="media-body mr-3">
+                              <span class="tail-container"></span>
+                              <p>Donec sed odio dui. </p>
+                            </div>
+                          </div>
+                          <div class="media user_question mt-2">
+                            <img src="../assets/img/EugeneAPert.png" class="align-self-start" alt="...">
+                            <div class="media-body ml-3">
+                              <span class="tail-container"></span>
+                              <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 new_chat_message_content chat-desactive">
+                          <div class="form-row">
+                            <div class="col-md-12 pt-4 text-center">
+                              <h4 class="mb-0">Consulta terminada</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  <div class="col-12 p-0" id="nuevo_padecimiento_resume">
+                    <div class="row">
+                      <div>
+                        <div class="col-12 new_chat_title">
+                          <div class="row">
+                            <div class="col-10">
+                              <p class="mb-0 p-2">Chat del <span>15/01/2019</span></p>
+                            </div>
+                            <div class="col-2 text-right">
+                              <button class="btn px-1" type="button" data-toggle="collapse" data-target="#collapseInfoConsultaChat" aria-expanded="false" aria-controls="collapseInfoConsultaChat">
+                                <i class="fas fa-user-md"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="collapseInfoConsultaChat">
+                          <div class="card card-body">
+                            <div class="col-12">
+                              <p class="mb-1 color-immer">¿Presenta algún síntoma?</p>
+                              <div class="sintomas_resume row mb-2">
+                                <div class="col-8">
+                                  <p class="mb-0">Fiebre</p>
+                                </div>
+                                <div class="col-4 text-right">
+                                  <p class="mb-0">X <span>días</span></p>
+                                </div>
+                                <div class="col-8">
+                                  <p class="mb-0">Tos</p>
+                                </div>
+                                <div class="col-4 text-right">
+                                  <p class="mb-0">X <span>días</span></p>
+                                </div>
+                              </div>
+                              <p class="mb-1 color-immer">¿Esta administrando algún medicamento?</p>
+                              <div class="sintomas_resume mb-2">
+                                <p class="mb-0">Vestibulum rutrum ipsum non nulla efficitur, quis suscipit est aliquam.</p>
+                              </div>
+                              <p class="mb-1 color-immer">Comentarios</p>
+                              <div class="sintomas_resume">
+                                <p class="mb-0">Vestibulum rutrum ipsum non nulla efficitur, quis suscipit est aliquam.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 new_chat_content">
+                          <div class="media user_answer mt-2">
+                            <div class="media-body mr-3">
+                              <span class="tail-container"></span>
+                              <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                          <div class="media user_question mt-2">
+                            <img src="../assets/img/EugeneAPert.png" class="align-self-start" alt="...">
+                            <div class="media-body ml-3">
+                              <span class="tail-container"></span>
+                              <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                          <div class="media user_answer mt-2">
+                            <div class="media-body mr-3">
+                              <span class="tail-container"></span>
+                              <p>Donec sed odio dui. </p>
+                            </div>
+                          </div>
+                          <div class="media user_question mt-2">
+                            <img src="../assets/img/EugeneAPert.png" class="align-self-start" alt="...">
+                            <div class="media-body ml-3">
+                              <span class="tail-container"></span>
+                              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                            </div>
+                          </div>
+                          <div class="media user_question mt-2">
+                            <img src="../assets/img/EugeneAPert.png" class="align-self-start" alt="...">
+                            <div class="media-body ml-3">
+                              <span class="tail-container"></span>
+                              <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                          <div class="media user_answer mt-2">
+                            <div class="media-body mr-3">
+                              <span class="tail-container"></span>
+                              <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                          <div class="media user_answer mt-2">
+                            <div class="media-body mr-3">
+                              <span class="tail-container"></span>
+                              <p>Cras sit amet nibh libero, in gravida nulla.</p>
+                            </div>
+                          </div>
+                          <div class="media user_question mt-2">
+                            <img src="../assets/img/EugeneAPert.png" class="align-self-start" alt="...">
+                            <div class="media-body ml-3">
+                              <span class="tail-container"></span>
+                              <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                          <div class="media user_answer mt-2">
+                            <div class="media-body mr-3">
+                              <span class="tail-container"></span>
+                              <p>Cras sit amet nibh libero, in gravida nulla. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 new_chat_message_content chat-desactive">
+                          <div class="form-row">
+                            <div class="col-md-12 pt-4 text-center">
+                              <h4 class="mb-0">Consulta terminada</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -98,7 +619,7 @@
                     <div class="card-header pt-2 pb-2" id="headingOne">
                       <p class="mb-0">
                         <button class="btn btn-link collapsed p-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                          Cartilla de vacunación <i class="fas fa-chevron-down"></i>
+                          Cartilla de vacunación <i class="fas fa-chevron-down ml-auto"></i>
                         </button>
                       </p>
                     </div>
@@ -116,7 +637,7 @@
                     <div class="card-header pt-2 pb-2" id="headingTwo">
                       <p class="mb-0">
                         <button class="btn btn-link p-0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                          Historial de consultas <i class="fas fa-chevron-down"></i>
+                          Historial de consultas <i class="fas fa-chevron-down ml-auto"></i>
                         </button>
                       </p>
                     </div>

@@ -3,5 +3,7 @@ function immerFicha() {
 }
 
 function chatImmer() {
-  document.getElementById("chat_paciente_content").style.display = "block";
+  var d = document.getElementById("chat_paciente_content");
+  // .style.display = "block";
+  d.className += " openChat";
 }
