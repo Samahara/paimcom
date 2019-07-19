@@ -702,6 +702,9 @@ span.badge.pend_success {
   #accordionHistorialClinico .card-body {
     height: auto;
   }
+  #chat_paciente_content {
+    width: 100%;
+  }
   #collapseMyData {
     display: block!important;
   }
@@ -714,8 +717,16 @@ span.badge.pend_success {
   #consulta_confirm .consulta_pend_resume > div:nth-child(1) p {
     width: 91%;
   }
+  #content_chats {
+    height: auto;
+    min-height: 75.5vh;
+  }
+  #chat_paciente_content.collapse:not(.show) ~ #ficha_paciente_content {
+    display: block;
+  }
   #ficha_paciente_content {
     height: auto;
+    display: none;
     max-height: initial;
   }
   #ficha_paciente_content .col-sectionleft {
@@ -794,6 +805,10 @@ span.badge.pend_success {
   }
   #myGraphicsContent .tab-pane .container_info_graphics {
     height: auto;
+  }
+  #no_payment_chats,
+  #payment_chats {
+    height: 100vh;
   }
   #pills-tabContent-menuPaciente {
     height: auto;
