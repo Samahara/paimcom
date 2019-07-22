@@ -414,13 +414,13 @@ span.badge.pend_success {
   min-height: 600px;
   width: 100%;
 }
-#myProfile .media {
+#myProfile .media.user-cover-info {
   background: #F2297375;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   height: 150px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
-#myProfile .media img {
+#myProfile .media img.user-photo {
   width: 200px;
   height: 200px;
   border-radius: 100%;
@@ -599,6 +599,18 @@ span.badge.pend_success {
 .list-content-pay img {
   width: 40px;
   height: auto;
+}
+.list-payment-method .media img {
+  background-color: #FFFFFF;
+  border: 1px solid gray;
+  border-radius: 25px;
+  width: 180px;
+  height: auto;
+}
+.list-payment-method .list-group-item.active {
+  background-color: #ffffff;
+  border: 2px solid #ff2273;
+  color: #ff2273;
 }
 .modal-footer {
   border-top: none;
@@ -856,15 +868,16 @@ span.badge.pend_success {
   #myProfile {
     min-height: 100vh;
   }
-  #myProfile .media {
+  #myProfile .media.user-cover-info,
+  .list-payment-method .media {
     display: grid;
     height: auto;
   }
-  #myProfile .media-body {
+  #myProfile .media-body.user-cover-info-2 {
     margin-top: 2rem!important;
     text-align: center;
   }
-  #myProfile .media img {
+  #myProfile .media img.user-photo {
     height: 150px;
     margin: 1.5rem auto 0!important;
     width: 150px;
@@ -919,6 +932,17 @@ span.badge.pend_success {
     max-width: calc(100%/3);
     flex: initial;
     padding: 0;
+  }
+  .list-payment-method .media img {
+    margin: .25rem auto 0!important;
+  }
+  .list-payment-method .media-body {
+    margin-top: 1rem!important;
+    text-align: center;
+  }
+  .list-payment-method .media-body div.col-12 {
+    margin-top: 1rem!important;
+    text-align: center;
   }
   .navbar-brand {
     margin-right: 0;

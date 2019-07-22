@@ -41,9 +41,9 @@
     <div class="container-fluid" id="myProfile">
       <div class="row">
         <div class="col-12 p-0">
-          <div class="media">
-            <img src="../assets/img/ArturoHyeong.jpg" class="ml-5 mr-5 mt-4" alt="Paciente Immer">
-            <div class="media-body mt-5">
+          <div class="media user-cover-info">
+            <img src="../assets/img/ArturoHyeong.jpg" class="ml-5 mr-5 mt-4 user-photo" alt="Paciente Immer">
+            <div class="media-body mt-5 user-cover-info-2">
               <h4 class="mt-0">Arturo Hyeong Sánchez</h4>
               <div id="menu_profile">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -64,7 +64,7 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-2"></div>
-        <div class="col-12 col-md-10 mt-3">
+        <div class="col-12 col-md-10 mt-3 pb-3">
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-HistorialdePagos" role="tabpanel" aria-labelledby="pills-HistorialdePagos-tab">
               <div class="col-12">
@@ -100,7 +100,40 @@
                 </ul>
               </div>
             </div>
-            <div class="tab-pane fade" id="pills-MisTarjetas" role="tabpanel" aria-labelledby="pills-MisTarjetas-tab"></div>
+            <div class="tab-pane fade" id="pills-MisTarjetas" role="tabpanel" aria-labelledby="pills-MisTarjetas-tab">
+              <div class="col-12">
+                <ul class="list-group list-payment-method">
+                  <li class="list-group-item active">
+                    <div class="media">
+                      <img src="../assets/img/logomastercard.png" class="align-self-start mr-3 px-5 py-4" alt="...">
+                      <div class="media-body">
+                        <h5 class="mt-0">· · · · 5555</h5>
+                        <p class="mb-0">Nombre <strong>Arturo Hyeong Sánchez</strong></p>
+                        <p class="mb-0">Vence el <strong>12/23</strong></p>
+                        <div class="col-12 text-right p-0">
+                          <button type="button" class="btn cancel" data-dismiss="modal">Eliminar tarjeta</button>
+                          <!-- <button type="button" class="btn save">Seleccionar como principal</button> -->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="media">
+                      <img src="../assets/img/logovisa.png" class="align-self-start mr-3 px-5 py-4" alt="...">
+                      <div class="media-body">
+                        <h5 class="mt-0">· · · · 5555</h5>
+                        <p class="mb-0">Nombre <strong>Arturo Hyeong Sánchez</strong></p>
+                        <p class="mb-0">Vence el <strong>12/23</strong></p>
+                        <div class="col-12 text-right p-0">
+                          <button type="button" class="btn cancel" data-dismiss="modal">Eliminar tarjeta</button>
+                          <button type="button" class="btn save">Seleccionar como principal</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <!-- <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...C</div> -->
           </div>
         </div>
