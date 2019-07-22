@@ -944,6 +944,9 @@ span.badge.pend_success {
     margin-top: 1rem!important;
     text-align: center;
   }
+  #pills-MisTarjetas div.col-12 {
+    padding: 0;
+  }
   .navbar-brand {
     margin-right: 0;
   }
