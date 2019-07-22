@@ -359,6 +359,20 @@ span.badge.pend_success {
   color: #F22973;
   font-weight: 600;
 }
+#menu_profile a.nav-link {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+}
+#menu_profile a.nav-link:hover {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+#menu_profile a.nav-link.active {
+  background-color: #FFFFFF;
+  border: 1px solid #F22973;
+  color: #F22973;
+}
 #myGraphics,
 #myMedicalConsultation {
   border-bottom: 1px solid #bdc3c7;
@@ -391,6 +405,24 @@ span.badge.pend_success {
 	background-color: #b9b9b950;
 	border-radius: 5px;
 }
+#myProfile {
+  background: url('../assets/img/immer-fondo.png') no-repeat 50% 50%;
+  background-size: cover;
+  min-height: 600px;
+  width: 100%;
+}
+#myProfile .media {
+  background: #F2297375;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  height: 150px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+#myProfile .media img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 4px solid #F22973;
+}
 #navbarPacienteImmer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   height: 8.67579908675799vh;
@@ -405,7 +437,7 @@ span.badge.pend_success {
   padding: 10px 6px;
 }
 #nuevo_padecimiento_form {
-  height: 88.5vh;
+  height: 86vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -793,6 +825,12 @@ span.badge.pend_success {
     margin-top: 10px;
     max-height: initial;
   }
+  #menu_profile li.nav-item:first-child {
+    margin-left: auto;
+  }
+  #menu_profile li.nav-item:last-child {
+    margin-right: auto;
+  }
   #myGraphics .nav-link,
   #myMedicalConsultation .nav-link {
     border: 1px solid #bdc3c7;
@@ -804,12 +842,28 @@ span.badge.pend_success {
   }
   #myGraphics .nav-item,
   #myMedicalConsultation .nav-item {
-    width: 100%;
     margin-bottom: 1px;
     text-align: center;
+    width: 100%;
   }
   #myGraphicsContent .tab-pane .container_info_graphics {
     height: auto;
+  }
+  #myProfile {
+    min-height: 100vh;
+  }
+  #myProfile .media {
+    display: grid;
+    height: auto;
+  }
+  #myProfile .media-body {
+    margin-top: 2rem!important;
+    text-align: center;
+  }
+  #myProfile .media img {
+    height: 150px;
+    margin: 1.5rem auto 0!important;
+    width: 150px;
   }
   #no_payment_chats,
   #payment_chats {

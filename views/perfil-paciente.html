@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Immer es una plataforma que te permite mejorar el lazo de comunicación con el pediatra de tu hijo.">
+    <meta name="author" content="Maqueta realizada por Samahara Fernández">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <title>Paciente immer</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbarPacienteImmer">
+      <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-immer.png" alt="Logo immer"> </a>
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#chat_paciente_content" role="button" aria-expanded="false" aria-controls="chat_paciente_content"><i class="fas fa-comment-medical"><span class="badge"></span></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-calendar-alt"><span class="badge pend_success"></span></i></a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-bell"><span class="badge confirm_success"></span></i></a>
+        </li>
+        <li class="nav-item dropdown" id="dropdownMenuPaciente">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownPacienteImmer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="../assets/img/ArturoHyeong.jpg" alt="Foto perfil paciente"><span> Arturo Hyeong Sánchez</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownPacienteImmer">
+            <a class="dropdown-item" href="#"><i class="fab fa-whatsapp"></i> Chat de ayuda</a>
+            <a class="dropdown-item" href="/perfil-paciente.html"><i class="fas fa-user"></i> Mi perfil</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid" id="myProfile">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="media">
+            <img src="../assets/img/ArturoHyeong.jpg" class="ml-5 mr-5 mt-4" alt="Paciente Immer">
+            <div class="media-body mt-5">
+              <h4 class="mt-0">Arturo Hyeong Sánchez</h4>
+              <div id="menu_profile">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-MisTarjetas-tab" data-toggle="pill" href="#pills-MisTarjetas" role="tab" aria-controls="pills-MisTarjetas" aria-selected="false">Mis tarjetas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-HistorialdePagos-tab" data-toggle="pill" href="#pills-HistorialdePagos" role="tab" aria-controls="pills-HistorialdePagos" aria-selected="true">Historial de pagos</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-3"></div>
+        <div class="col-12 col-md-9 mt-3">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-MisTarjetas" role="tabpanel" aria-labelledby="pills-MisTarjetas-tab">...A</div>
+            <div class="tab-pane fade" id="pills-HistorialdePagos" role="tabpanel" aria-labelledby="pills-HistorialdePagos-tab">...B</div>
+            <!-- <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...C</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a79f95d4bd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+  </body>
+</html>
