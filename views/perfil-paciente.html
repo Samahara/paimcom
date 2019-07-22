@@ -48,10 +48,10 @@
               <div id="menu_profile">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" id="pills-MisTarjetas-tab" data-toggle="pill" href="#pills-MisTarjetas" role="tab" aria-controls="pills-MisTarjetas" aria-selected="false">Mis tarjetas</a>
+                    <a class="nav-link active" id="pills-HistorialdePagos-tab" data-toggle="pill" href="#pills-HistorialdePagos" role="tab" aria-controls="pills-HistorialdePagos" aria-selected="true">Historial de pagos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="pills-HistorialdePagos-tab" data-toggle="pill" href="#pills-HistorialdePagos" role="tab" aria-controls="pills-HistorialdePagos" aria-selected="true">Historial de pagos</a>
+                    <a class="nav-link" id="pills-MisTarjetas-tab" data-toggle="pill" href="#pills-MisTarjetas" role="tab" aria-controls="pills-MisTarjetas" aria-selected="false">Mis tarjetas</a>
                   </li>
                   <!-- <li class="nav-item">
                     <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
@@ -63,11 +63,44 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-3"></div>
-        <div class="col-12 col-md-9 mt-3">
+        <div class="col-12 col-md-2"></div>
+        <div class="col-12 col-md-10 mt-3">
           <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-MisTarjetas" role="tabpanel" aria-labelledby="pills-MisTarjetas-tab">...A</div>
-            <div class="tab-pane fade" id="pills-HistorialdePagos" role="tabpanel" aria-labelledby="pills-HistorialdePagos-tab">...B</div>
+            <div class="tab-pane fade show active" id="pills-HistorialdePagos" role="tabpanel" aria-labelledby="pills-HistorialdePagos-tab">
+              <div class="col-12">
+                <ul class="list-group list-titles-pay">
+                  <li class="list-group-item color-immer">
+                    <div class="row">
+                      <div class="col-3"><p class="mb-0">Fecha</p></div>
+                      <div class="col-3 text-center"><p class="mb-0">Total</p></div>
+                      <div class="col-3 text-center"><p class="mb-0">Próximo pago</p></div>
+                      <div class="col-3 text-center"><p class="mb-0">Método de pago</p></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="list-group list-content-pay">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-3"><p class="mb-0">01/01/2019</p></div>
+                      <div class="col-3 text-center"><p class="mb-0">$150.00</p></div>
+                      <div class="col-3 text-center"><p class="mb-0">01/02/2019</p></div>
+                      <div class="col-3 text-center"><img src="../assets/img/logovisa.png" alt="método de pago"></div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-3"><p class="mb-0">01/12/2018</p></div>
+                      <div class="col-3 text-center"><p class="mb-0">$150.00</p></div>
+                      <div class="col-3 text-center"><p class="mb-0">01/01/2019</p></div>
+                      <div class="col-3 text-center"><img src="../assets/img/logomastercard.png" alt="método de pago"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-MisTarjetas" role="tabpanel" aria-labelledby="pills-MisTarjetas-tab"></div>
             <!-- <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...C</div> -->
           </div>
         </div>
