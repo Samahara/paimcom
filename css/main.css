@@ -882,6 +882,7 @@ span.badge.pend_success {
   }
   #pills-HistorialdePagos .col-3 {
     padding: 0;
+    text-align: center;
   }
   #pills-graficas-crecimiento {
     background-color: #FFFFFF;
