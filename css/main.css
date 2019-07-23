@@ -502,6 +502,35 @@ span.badge.pend_success {
 #consulta_confirm-tab.active i {
   color: #FFFFFF;
 }
+#pills-information div.information-content {
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  display: block;
+  margin-bottom: -1px;
+  padding: 0 .9375rem;
+  position: relative;
+}
+#pills-information div.col-menulateral {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  position: relative;
+}
+#pills-information div.col-contenidomenu {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+  position: relative;
+}
+#pills-information div.col-menulateral a.nav-link {
+  border-radius: 0;
+  color: #333333;
+  padding: .75rem 1.25rem;
+}
+#pills-information div.col-menulateral a.nav-link.active {
+  background-color: #FFF;
+  border-bottom: 2px solid #F22973;
+  color: #F22973;
+}
 #pills-tabContent-menuPaciente {
   /* background-color: #FFFFFF; */
   /* box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05); */
@@ -580,6 +609,9 @@ span.badge.pend_success {
 .modal-body p {
   color: #757575;
 }
+.col-contenidomenu {
+  padding: .75rem 1.25rem;
+}
 .cursor-po {
   cursor: pointer;
 }
@@ -595,6 +627,10 @@ span.badge.pend_success {
   border-color: #F22973;
   color: #fff;
   outline: none;
+}
+.empty-list {
+  color: rgba(51, 51, 51, 0.5);
+  text-transform: uppercase;
 }
 .list-content-pay img {
   width: 40px;
@@ -841,11 +877,11 @@ span.badge.pend_success {
     margin-top: 10px;
     max-height: initial;
   }
-  #menu_profile li.nav-item:first-child {
-    margin-left: auto;
+  #menu_profile li.nav-item {
+    width: 33%;
   }
-  #menu_profile li.nav-item:last-child {
-    margin-right: auto;
+  #menu_profile a.nav-link {
+    padding: .5rem 0px;
   }
   #myGraphics .nav-link,
   #myMedicalConsultation .nav-link {
@@ -940,12 +976,31 @@ span.badge.pend_success {
     margin-top: 1rem!important;
     text-align: center;
   }
+  .list-payment-method .new-card .media-body,
+  .list-payment-method .empty-list .media-body {
+    margin-top: 0rem!important;
+  }
   .list-payment-method .media-body div.col-12 {
     margin-top: 1rem!important;
     text-align: center;
   }
+  #pills-information div.col-12,
   #pills-MisTarjetas div.col-12 {
     padding: 0;
+  }
+  #pills-information div.col-menulateral {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  #pills-information div.col-menulateral a.nav-link {
+    padding: .25rem;
+  }
+  #pills-information div.col-contenidomenu {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  #v-pills-tabContent p {
+    word-break: break-all;
   }
   .navbar-brand {
     margin-right: 0;
@@ -958,7 +1013,6 @@ span.badge.pend_success {
     padding-left: .25rem;
     padding-right: .25rem;
   }
-  .
   .user_info_content,
   #ficha_section_1 > div:nth-child(2) {
     margin-bottom: 10px!important;

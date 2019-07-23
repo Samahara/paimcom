@@ -53,8 +53,11 @@
                   <li class="nav-item">
                     <a class="nav-link" id="pills-MisTarjetas-tab" data-toggle="pill" href="#pills-MisTarjetas" role="tab" aria-controls="pills-MisTarjetas" aria-selected="false">Mis tarjetas</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-information-tab" data-toggle="pill" href="#pills-information" role="tab" aria-controls="pills-information" aria-selected="false">Configuración</a>
+                  </li>
                   <!-- <li class="nav-item">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                    <a class="nav-link" id="pills-subscriptions-tab" data-toggle="pill" href="#pills-subscriptions" role="tab" aria-controls="pills-subscriptions" aria-selected="false">Suscripciones</a>
                   </li> -->
                 </ul>
               </div>
@@ -86,7 +89,7 @@
                       <div class="col-3"><p class="mb-0">01/01/2019</p></div>
                       <div class="col-3 text-center"><p class="mb-0">$150.00</p></div>
                       <div class="col-3 text-center"><p class="mb-0">01/02/2019</p></div>
-                      <div class="col-3 text-center"><img src="../assets/img/logovisa.png" alt="método de pago"></div>
+                      <div class="col-3 text-center"><img src="../assets/img/logomastercard.png" alt="método de pago"></div>
                     </div>
                   </li>
                   <li class="list-group-item">
@@ -94,7 +97,12 @@
                       <div class="col-3"><p class="mb-0">01/12/2018</p></div>
                       <div class="col-3 text-center"><p class="mb-0">$150.00</p></div>
                       <div class="col-3 text-center"><p class="mb-0">01/01/2019</p></div>
-                      <div class="col-3 text-center"><img src="../assets/img/logomastercard.png" alt="método de pago"></div>
+                      <div class="col-3 text-center"><img src="../assets/img/logovisa.png" alt="método de pago"></div>
+                    </div>
+                  </li>
+                  <li class="list-group-item empty-list">
+                    <div class="row">
+                      <div class="col-12 text-center"><p class="mb-0">Sin registros</p></div>
                     </div>
                   </li>
                 </ul>
@@ -131,10 +139,183 @@
                       </div>
                     </div>
                   </li>
+                  <li class="list-group-item new-card">
+                    <div class="media">
+                      <div class="media-body text-right mt-0">
+                        <button class="btn save" type="submit">Añadir nueva tarjeta</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item empty-list">
+                    <div class="media">
+                      <div class="media-body text-center">
+                        <p class="mb-2">No tienes tarjetas registradas</p>
+                        <button class="btn save" type="submit">Añadir tarjeta</button>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
-            <!-- <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...C</div> -->
+            <div class="tab-pane fade" id="pills-information" role="tabpanel" aria-labelledby="pills-information-tab">
+              <div class="col-12">
+                <div class="information-content">
+                  <div class="row">
+                    <div class="col-menulateral">
+                      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-cuentaUsuario-tab" data-toggle="pill" href="#v-pills-cuentaUsuario" role="tab" aria-controls="v-pills-cuentaUsuario" aria-selected="false">Cuenta</a>
+                        <!-- <a class="nav-link" id="v-pills-misDatos-tab" data-toggle="pill" href="#v-pills-misDatos" role="tab" aria-controls="v-pills-misDatos" aria-selected="true">Mis datos</a> -->
+                        <a class="nav-link" id="v-pills-misHijos-tab" data-toggle="pill" href="#v-pills-misHijos" role="tab" aria-controls="v-pills-misHijos" aria-selected="false">Mis hijos</a>
+                        <a class="nav-link" id="v-pills-notificaciones-tab" data-toggle="pill" href="#v-pills-notificaciones" role="tab" aria-controls="v-pills-notificaciones" aria-selected="false">Notificaciones</a>
+                      </div>
+                    </div>
+                    <div class="col-contenidomenu">
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-cuentaUsuario" role="tabpanel" aria-labelledby="v-pills-cuentaUsuario-tab">
+                          <div class="col-12 mb-3">
+                            <div class="row">
+                              <div class="col-8">
+                                <h6 class="color-immer">Contacto principal</h6>
+                              </div>
+                              <div class="col-4 text-right">
+                                <button type="button" class="btn color-immer p-0"><i class="fas fa-pencil-alt"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <form>
+                              <div class="row">
+                                <div class="col-12 col-md-6">
+                                  <p class="mb-0 color-immer">Nombre</p>
+                                  <input type="text" class="form-control mb-3" placeholder="Nombre">
+                                  <p>Arturo Hyeong Sánchez</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <p class="mb-0 color-immer">Teléfono</p>
+                                  <input type="text" class="form-control mb-3" placeholder="Teléfono">
+                                  <p>55 13 01 21 08</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-md-12">
+                                  <p class="mb-0 color-immer">Correo</p>
+                                  <input type="text" class="form-control mb-3" placeholder="Correo electrónico">
+                                  <p>immer.medical.paciente@gmail.com</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-md-12 text-right">
+                                  <button type="button" class="btn cancel" data-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn save">Guardar</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <!-- <div class="tab-pane fade" id="v-pills-misDatos" role="tabpanel" aria-labelledby="v-pills-misDatos-tab">...</div> -->
+                        <div class="tab-pane fade" id="v-pills-misHijos" role="tabpanel" aria-labelledby="v-pills-misHijos-tab">
+                          <div class="col-12 mb-3">
+                            <div class="row">
+                              <div class="col-8">
+                                <h6 class="color-immer">Hijos Registrados</h6>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <form class="mb-3">
+                              <div class="row">
+                                <div class="col-12 text-right">
+                                  <button type="button" class="btn color-immer p-0"><i class="fas fa-pencil-alt"></i></button>
+                                </div>
+                                <div class="col-12">
+                                  <p class="mb-0 color-immer">Nombre</p>
+                                  <input type="text" class="form-control mb-3" placeholder="Nombre">
+                                  <p>Rodrigo Hyeong Hernández</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-md-6">
+                                  <p class="mb-0 color-immer">Fecha de nacimiento</p>
+                                  <input type="text" class="form-control mb-3" placeholder="Fecha de nacimiento">
+                                  <p>06/12/2016</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <p class="mb-0 color-immer">Sexo</p>
+                                  <input type="text" class="form-control mb-3" placeholder="Sexo">
+                                  <p>Masculino</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-md-6">
+                                  <p class="mb-0 color-immer">Grupo sanguíneo</p>
+                                  <input type="text" class="form-control mb-3" placeholder="Grupo sanguíneo">
+                                  <p>O-</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <p class="mb-0 color-immer">Aseguradora</p>
+                                  <input type="text" class="form-control mb-3" placeholder="Aseguradora">
+                                  <p>FCO</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-md-12 text-right">
+                                  <button type="button" class="btn cancel" data-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn save">Guardar</button>
+                                </div>
+                              </div>
+                            </form>
+                            <form class="mb-3">
+                              <div class="row">
+                                <div class="col-12 text-right">
+                                  <button type="button" class="btn color-immer p-0"><i class="fas fa-pencil-alt"></i></button>
+                                </div>
+                                <div class="col-12">
+                                  <p class="mb-0 color-immer">Nombre</p>
+                                  <input type="text" class="form-control mb-3 d-none" placeholder="Nombre">
+                                  <p>Valeria Hyeong Hernández</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-md-6">
+                                  <p class="mb-0 color-immer">Fecha de nacimiento</p>
+                                  <input type="text" class="form-control mb-3 d-none" placeholder="Fecha de nacimiento">
+                                  <p>03/11/2014</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <p class="mb-0 color-immer">Sexo</p>
+                                  <input type="text" class="form-control mb-3 d-none" placeholder="Sexo">
+                                  <p>Femenino</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-md-6">
+                                  <p class="mb-0 color-immer">Grupo sanguíneo</p>
+                                  <input type="text" class="form-control mb-3 d-none" placeholder="Grupo sanguíneo">
+                                  <p>O+</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <p class="mb-0 color-immer">Aseguradora</p>
+                                  <input type="text" class="form-control mb-3 d-none" placeholder="Aseguradora">
+                                  <p>FCO</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-md-12 text-right">
+                                  <button type="button" class="btn cancel" data-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn save">Guardar</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-notificaciones" role="tabpanel" aria-labelledby="v-pills-notificaciones-tab">...</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="tab-pane fade" id="pills-subscriptions" role="tabpanel" aria-labelledby="pills-subscriptions-tab"></div> -->
           </div>
         </div>
       </div>
