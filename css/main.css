@@ -1000,7 +1000,7 @@ span.badge.pend_success {
     max-width: 66.666667%;
   }
   #v-pills-tabContent p {
-    word-break: break-all;
+    word-break: break-word;
   }
   .navbar-brand {
     margin-right: 0;
