@@ -61,6 +61,8 @@ span.badge.pend_success {
 }
 #accordionHistorialClinico .card-body {
   height: 432px;
+  overflow: scroll;
+  overflow-x: hidden;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -289,6 +291,7 @@ span.badge.pend_success {
   max-height: 326px;
   overflow-y: scroll;
 }
+#accordionHistorialClinico .card-body::-webkit-scrollbar,
 #collapseInfoConsultaChat .card-body::-webkit-scrollbar,
 #nuevo_padecimiento_form::-webkit-scrollbar,
 #hours_calendar::-webkit-scrollbar,
@@ -296,6 +299,7 @@ span.badge.pend_success {
 .new_chat_content::-webkit-scrollbar {
 	width: 4px;
 }
+#accordionHistorialClinico .card-body::-webkit-scrollbar-thumb,
 #collapseInfoConsultaChat .card-body::-webkit-scrollbar-thumb,
 #nuevo_padecimiento_form::-webkit-scrollbar-thumb,
 #hours_calendar::-webkit-scrollbar-thumb,

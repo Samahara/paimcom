@@ -628,6 +628,473 @@
                       <div class="card-body pt-0 pb-2">
                         <div class="row">
                           <div class="col-12">
+                            <div class="col-lg-12">
+															<div class="row">
+																<div class="d-none d-sm-block offset-md-2 col-md-3">
+																	<p class="color-immer">Edad</p>
+																</div>
+																<div class="col-md-4">
+																	<p class="color-immer">Vacunas</p>
+																</div>
+																<div class="d-none d-sm-block col-md-3">
+																	<p class="color-immer">Fecha</p>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-12" id="cont-cartilla2">
+															<div class="row">
+																<!-- Al nacer -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en1!=null && vacunas.en2!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> Al nacer</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v1">BCG</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v2">Hepatitis B</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 2 meses -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en3!=null && vacunas.en5!=null && vacunas.en10!=null && vacunas.en13!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> 2 meses</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v3">Hepatitis B</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																					31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v5">Pentavalente acelular</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+                                        31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v10">Rotavirus</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																					31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v13">Neumococo Conjugada</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																		  		31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 4 meses -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en11!=null && vacunas.en6!=null && vacunas.en14!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> 4 meses</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v11">Rotavirus</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																					31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v6">Pentavalente acelular</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																					31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v14">Neumococo Conjugada <!--<small ng-show="vacunas.en14!=null">- {{ vacunas.en14f | date: 'dd/MM/yyyy' }}</small>--> </label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																					31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 6 meses -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en12!=null && vacunas.en7!=null && vacunas.en16!=null && vacunas.en4!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> 6 meses</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v4">Hepatitis B</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																					31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v12">Rotavirus</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v7">Pentavalente acelular</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v54">Neumococo Conjugada</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v16">Influenza</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 7 meses -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en17!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> 7 meses</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v17">Influenza</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 12 a 15 meses -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en15!=null && vacunas.en19!=null && vacunas.en32!=null && vacunas.en33!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> 12 a 15 meses</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v32">Hepatitis A</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v19">SRP</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v33">Varicela</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v53">Neumococo Conjugada</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 18 meses -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en8!=null && vacunas.en37!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> 18 meses</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v37">Hepatitis A</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v8">Pentavalente acelular</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 2 años -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en38!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> 2 años</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v38">Neumococo Polisacárida</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 4 a 6 años -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en9!=null && vacunas.en40!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> 4 a 6 años</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v20">SRP</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3 ">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v9">DPT acelular</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v40">Varicela</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 9 a 10 años -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en41!=null && vacunas.en42!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> 9 a 10 años</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v41">Virus del Papiloma Humano</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v42">DPT acelular</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- Anual -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en18f ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> Anual</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v18">Influenza</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- Adicionales -->
+																<div class="col-lg-12 mb-125 bb-gray">
+																	<div class="row">
+																		<div class="offset-md-2 col-md-3">
+																			<p class="titulo-cartilla mb-0"><i ng-class="vacunas.en21!=null && vacunas.en22!=null ? 'fa fa-check' : 'fa fa-times'" aria-hidden="true"></i> Adicionales</p>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v21">Sabin</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+
+																		<div class="col-md-5">
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-4">
+																			<div class="styled-input-single Poppins">
+																				<label for="v22">SR</label>
+																			</div>
+																		</div>
+																		<div class="styled-input-container styled-input--rounded col-md-3">
+																			<div class="styled-input-single">
+																				31/10/2019
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<!-- Fin de la row -->
+														</div>
                           </div>
                         </div>
                       </div>
