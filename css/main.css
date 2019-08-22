@@ -1,4 +1,15 @@
+
+.payment-card {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  margin-bottom: 15px;
+  padding: 20px; }
+  .payment-card table {
+    margin-bottom: 0; }
+
 body {
+  background: url('../assets/img/immer-fondo.png') no-repeat 50% 50%;
+  background-size: cover;
   color: #333333;
   font-family: 'Comfortaa', cursive;
   font-size: 	0.875rem;
@@ -60,7 +71,8 @@ span.badge.pend_success {
   background-color: #F3AC20;
 }
 #accordionHistorialClinico .card-body {
-  height: 432px;
+  height: calc(100vh - 227px);
+  max-height: calc(100vh - 227px);
   overflow: scroll;
   overflow-x: hidden;
   padding-left: 15px;
@@ -74,6 +86,9 @@ span.badge.pend_success {
   border: none;
   padding-left: 15px;
   padding-right: 15px;
+}
+#accordionHistorialClinico .card:first-of-type {
+  border-bottom: 1px solid rgba(0,0,0,.125);
 }
 #accordionHistorialClinico .btn-link {
   color: #333333;
@@ -109,8 +124,8 @@ span.badge.pend_success {
 }
 #chat_paciente_content {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05);
-  top: 9vh;
-  height: 91vh;
+  top: 57px;
+  height: calc(100vh - 59px);
   position: absolute;
   right: 0;
   transition: width .35s ease;
@@ -127,7 +142,7 @@ span.badge.pend_success {
   background-size: cover; */
   background-color: #FFF;
   border: 1px solid #e9ecef;
-  height: 91vh;
+  height: calc(100vh - 59px);
 }
 #container_my_kids {
   max-height: 400px;
@@ -142,6 +157,7 @@ span.badge.pend_success {
 }
 #dropdownMenuPaciente .dropdown-item {
   color: rgba(51, 51, 51, 0.7);
+  cursor: pointer;
   font-size: 0.875rem;
 }
 #dropdownMenuPaciente .dropdown-item:hover {
@@ -153,6 +169,16 @@ span.badge.pend_success {
   color: rgba(51, 51, 51, 0.7);
   font-size: 0.75rem;
 }
+#dropdownNotifPaciente .dropdown-item {
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 0.875rem;
+}
+#dropdownNotifPaciente .dropdown-item:active {
+  background-color: transparent;
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 0.875rem;
+}
+#dropdownNotifPaciente .dropdown-menu,
 #dropdownMenuPaciente .dropdown-menu {
   left: auto;
   right: 0;
@@ -163,22 +189,20 @@ span.badge.pend_success {
   width: 30px;
 }
 #ficha_paciente_content {
-  background: url('../assets/img/immer-fondo.png') no-repeat 50% 50%;
-  background-size: cover;
-  height: 600px;
-  max-height: 600px;
+  height: calc(100vh - 57px);
+  max-height: calc(100vh - 57px);
   width: 100%;
 }
 #ficha_paciente_content .col-sectionleft {
-  height: 590px;
-  max-height: 590px;
+  height: calc(100vh - 67px);
+  max-height: calc(100vh - 67px);
   margin-top: 10px;
   padding-left: 10px;
   width: 310px;
 }
 #ficha_paciente_content .col-sectionright {
-  height: 590px;
-  max-height: 590px;
+  height: calc(100vh - 67px);
+  max-height: calc(100vh - 67px);
   margin-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -186,8 +210,8 @@ span.badge.pend_success {
 }
 #ficha_section_1 {
   /* box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05); */
-  height: 580px;
-  max-height: 580px;
+  height: calc(100vh - 77px);
+  max-height: calc(100vh - 77px);
 }
 #ficha_section_1 .media img {
   border-radius: 100%;
@@ -200,8 +224,8 @@ span.badge.pend_success {
 #ficha_section_2 {
   /* background-color: transparent; */
   /* box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05); */
-  height: 580px;
-  max-height: 580px;
+  height: calc(100vh - 77px);
+  max-height: calc(100vh - 77px)
 }
 #historial_chats button.chat-close {
   background-color: transparent;
@@ -233,13 +257,13 @@ span.badge.pend_success {
 }
 #home_section_1 {
   border-right: 4px solid #F22973;
-  height: 438px;
-  max-height: 438px;
+  height: calc(100vh - 219px);
+  max-height: calc(100vh - 219px);
   padding: 0 30px;
 }
 #home_section_2 {
-  height: 438px;
-  max-height: 438px;
+  height: calc(100vh - 219px);
+  max-height: calc(100vh - 219px);
   padding: 0 30px;
 }
 #home_section_1 .media {
@@ -296,6 +320,8 @@ span.badge.pend_success {
 #nuevo_padecimiento_form::-webkit-scrollbar,
 #hours_calendar::-webkit-scrollbar,
 #list-consultation::-webkit-scrollbar,
+#list-surgeries::-webkit-scrollbar,
+#list-resume_chats::-webkit-scrollbar,
 .new_chat_content::-webkit-scrollbar {
 	width: 4px;
 }
@@ -304,6 +330,8 @@ span.badge.pend_success {
 #nuevo_padecimiento_form::-webkit-scrollbar-thumb,
 #hours_calendar::-webkit-scrollbar-thumb,
 #list-consultation::-webkit-scrollbar-thumb,
+#list-surgeries::-webkit-scrollbar-thumb,
+#list-resume_chats::-webkit-scrollbar-thumb,
 .new_chat_content::-webkit-scrollbar-thumb {
 	background-color: #b9b9b950;
 	border-radius: 5px;
@@ -320,32 +348,46 @@ span.badge.pend_success {
   color: #FFFFFF;
   font-weight: 600;
 }
+.immer_paciente_container {
+  background: url('../assets/img/immer-fondo.png') no-repeat 50% 50%;
+  background-size: cover;
+  min-height: calc(100vh - 57px);
+}
 #immer_paciente_home h1 span {
   color: #333333;
 }
 #immer_paciente_home .col-banner {
   background-color: #1F3F85;
   height: 600px;
+  max-height: calc(100vh - 57px);
   width: 160px;
 }
 #immer_paciente_home .col-immer {
-  background: url('../assets/img/immer-fondo.png') no-repeat 50% 50%;
-  background-size: cover;
-  height: 600px;
+  height: calc(100vh - 57px);
   width: calc(100% - 160px);
 }
 #collapseInfoConsultaChat {
   position: absolute;
-  margin-right: -15px;
+  left: 0;
+  right: 0;
   z-index: 10;
 }
 #customFileChat {
   display: none;
 }
 #list-consultation {
-  max-height: 323px;
-  overflow-x: scroll;
+  max-height: calc(100vh - 337px);
+  overflow-y: scroll;
 }
+#list-resume_chats {
+  max-height: calc(100vh - 128px);
+  overflow-y: scroll;
+}
+#list-surgeries {
+  max-height: calc(100vh - 282px);
+  overflow-y: scroll;
+}
+#list-surgeries .list-group-item,
 #list-consultation .list-group-item {
   background-color: transparent;
   border: none;
@@ -355,13 +397,16 @@ span.badge.pend_success {
   text-align: left;
   border-radius: 0;
 }
+#list-surgeries .list-group-item i,
 #list-consultation .list-group-item i {
   font-size: 1.125rem;
   margin-right: 5px;
 }
+#list-surgeries .list-group-item span,
 #list-consultation .list-group-item span {
   font-size: 0.6875rem;
 }
+#list-surgeries .list-group-item.active,
 #list-consultation .list-group-item.active {
   color: #F22973;
   font-weight: 600;
@@ -380,10 +425,12 @@ span.badge.pend_success {
   border: 1px solid #F22973;
   color: #F22973;
 }
+#myTab3,
 #myGraphics,
 #myMedicalConsultation {
   border-bottom: 1px solid #bdc3c7;
 }
+#myTab3 .nav-link,
 #myGraphics .nav-link,
 #myMedicalConsultation .nav-link {
   border: 1px solid transparent;
@@ -391,31 +438,31 @@ span.badge.pend_success {
   border-top-right-radius: 5px;
   color: #d3d3d3;
 }
+#myTab3 .nav-link.active,
 #myGraphics .nav-link.active,
 #myMedicalConsultation .nav-link.active {
   background-color: #fff;
   border-color: #bdc3c7 #bdc3c7 #fff!important;
   color: #f22973;
 }
+#myTab3 .nav-link:hover,
 #myGraphics .nav-link:hover,
 #myMedicalConsultation .nav-link:hover {
   border-color: #e9ecef #e9ecef transparent;
 }
-#myGraphicsContent .tab-pane .container_info_graphics {
-  height: 455px;
+#myGraphicsContent .container_info_graphics {
+  height: calc(100vh - 202px);
   overflow-y: scroll;
 }
-#myGraphicsContent .tab-pane .container_info_graphics::-webkit-scrollbar {
+#myGraphicsContent .container_info_graphics::-webkit-scrollbar {
 	width: 4px;
 }
-#myGraphicsContent .tab-pane .container_info_graphics::-webkit-scrollbar-thumb {
+#myGraphicsContent .container_info_graphics::-webkit-scrollbar-thumb {
 	background-color: #b9b9b950;
 	border-radius: 5px;
 }
 #myProfile {
-  background: url('../assets/img/immer-fondo.png') no-repeat 50% 50%;
-  background-size: cover;
-  min-height: 600px;
+  height: calc(100vh - 57px);
   width: 100%;
 }
 #myProfile .media.user-cover-info {
@@ -431,8 +478,9 @@ span.badge.pend_success {
   border: 4px solid #F22973;
 }
 #navbarPacienteImmer {
+  background-color: #FFFFFF;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  height: 8.67579908675799vh;
+  height: 57px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 #nueva_consulta-tab  {
@@ -444,7 +492,7 @@ span.badge.pend_success {
   padding: 10px 6px;
 }
 #nuevo_padecimiento_form {
-  height: 86vh;
+  height: calc(100vh - 170px);
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -472,7 +520,7 @@ span.badge.pend_success {
   background: url('../assets/img/immer-fondo.png') no-repeat 50% 50%;
   background-size: cover;
   border: 1px solid #e9ecef;
-  height: 88.5vh;
+  height: calc(100vh - 75px);
 }
 #consulta_pend-tab,
 #consulta_confirm-tab {
@@ -484,10 +532,11 @@ span.badge.pend_success {
   padding: 10px 6px;
 }
 #collapseInfoConsultaChat .card-body {
-  height: 466px;
-  max-height: 466px;
+  height: calc(100vh - 192px);
+  max-height: calc(100vh - 192px);
   overflow-x: hidden;
   overflow-y: scroll;
+  width: 100%;
 }
 #nueva_consulta-tab i,
 #consulta_pend-tab i,
@@ -531,21 +580,21 @@ span.badge.pend_success {
   padding: .75rem 1.25rem;
 }
 #pills-information div.col-menulateral a.nav-link.active {
-  background-color: #FFF;
+  /* background-color: #FFF; */
   border-bottom: 2px solid #F22973;
   color: #F22973;
 }
 #pills-tabContent-menuPaciente {
   /* background-color: #FFFFFF; */
   /* box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05); */
-  height: 520px;
-  max-height: 520px;
+  height: calc(100vh - 137px);
+  max-height: calc(100vh - 137px);
 }
 #pills-graficas-crecimiento,
 #pills-friso {
   background-color: #FFFFFF;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05);
-  height: 520px;
+  height: calc(100vh - 137px);
 }
 #pills-tab-menuPaciente {
   font-size: 1.25rem;
@@ -564,6 +613,25 @@ span.badge.pend_success {
 #pills-tab-menuPaciente .nav-link.active {
   background-color: #F22973;
   color: #FFFFFF;
+}
+#pills-friso-tab div {
+  background: url('../assets/img/friso/frisotip_tab.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  margin: 0 auto;
+  width: 130px;
+}
+#pills-friso-tab.active {
+  background-color: #1F3F85!important;
+}
+#pills-friso-tab.active div {
+  background: url('../assets/img/friso/frisotip_tab_2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  margin: 0 auto;
+  width: 130px;
 }
 #v-pills-nuevoChat-tab {
   background: transparent;
@@ -592,14 +660,33 @@ span.badge.pend_success {
 }
 
 .back-page a {
-  color: #D3D3D3;
+  color: #D3D3D3!important;
+  cursor: pointer;
   text-decoration: none;
+}
+.back-page a:hover {
+  color: #757575!important;
 }
 .chat-desactive {
   border: 2px solid #f22973!important;
   background-color: transparent!important;
   color: #f22973!important;
   height: 77px;
+}
+.button-friso {
+  background-color: transparent;
+  bottom: 5px;
+  border: 2px solid #1F3F85;
+  border-radius: 4px;
+  color: #1F3F85;
+  font-size: 17px;
+  font-weight: 600;
+  position: absolute;
+  right: 5px;
+}
+.button-friso:hover {
+  background-color: #1F3F85;
+  color: #FFFFFF;
 }
 .color-immer {
   color: #f22973;
@@ -671,7 +758,8 @@ span.badge.pend_success {
   padding-right: 1rem;
 }
 .new_chat_content {
-  height: 466px;
+  height: calc(100vh - 192px);
+  max-height: calc(100vh - 192px);
   overflow-y: scroll;
   overflow-x: hidden;
   padding-bottom: .5rem;
@@ -723,11 +811,11 @@ span.badge.pend_success {
 }
 .media.user_answer {
   float: right;
-  clear: left;
+  clear: both;
 }
 .media.user_question {
   float: left;
-  clear: right;
+  clear: both;
 }
 .user_answer p {
   background-color: #F22973;
@@ -870,6 +958,9 @@ span.badge.pend_success {
   #home_section_1 .media-info-paciente div.med-info-text {
     display: block;
   }
+  div.med-info-text + span {
+    word-break: break-all;
+  }
   #home_section_2 {
     height: auto;
     max-height: initial;
@@ -902,7 +993,7 @@ span.badge.pend_success {
     text-align: center;
     width: 100%;
   }
-  #myGraphicsContent .tab-pane .container_info_graphics {
+  #myGraphicsContent .container_info_graphics {
     height: auto;
   }
   #myProfile {
@@ -921,10 +1012,6 @@ span.badge.pend_success {
     height: 150px;
     margin: 1.5rem auto 0!important;
     width: 150px;
-  }
-  #no_payment_chats,
-  #payment_chats {
-    height: 100vh;
   }
   #pills-tabContent-menuPaciente {
     height: auto;
@@ -1051,5 +1138,24 @@ span.badge.pend_success {
   #home_section_2 .media:hover .media-body i {
     color: #F22973;
     font-size: 0.875rem;
+  }
+  #list-resume_chats {
+    max-height: calc(100vh - 678px);
+  }
+  #list-consultation {
+    max-height: calc(100vh - 682px);
+  }
+}
+
+@media (min-width: 1367px) {
+  #myProfile,
+  #immer_paciente_home,
+  #ficha_paciente_content {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1366px;
+    width: 100%;
   }
 }

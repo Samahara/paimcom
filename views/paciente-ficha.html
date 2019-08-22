@@ -20,10 +20,10 @@
           <a class="nav-link" data-toggle="collapse" href="#chat_paciente_content" role="button" aria-expanded="false" aria-controls="chat_paciente_content"><i class="fas fa-comment-medical"><span class="badge"></span></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-calendar-alt"><span class="badge pend_success"></span></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-calendar-alt"><span class="badge"></span></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-bell"><span class="badge confirm_success"></span></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-bell"><span class="badge"></span></i></a>
         </li>
         <li class="nav-item dropdown" id="dropdownMenuPaciente">
           <a class="nav-link dropdown-toggle" href="#" id="dropdownPacienteImmer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -594,8 +594,20 @@
                 </div>
               </div>
             </div>
-            <div class="mb-1" style="border: 3px solid #BC9537; height: 165px;"></div>
-            <div class="d-none d-md-block" style="background-color: #1F3F85; height: 250px; width: 300px;"></div>
+            <div class="mb-1 d-flex" style="background-color: #FFFFFF; border: 3px solid #BC9537; height: 165px;">
+              <div class="col-6 p-1">
+                <img src="../assets/img/friso/buena_salud_hijo.png" alt="FrisoTip">
+              </div>
+              <div class="col-6 p-1">
+                <p class="mb-0 text-center" style="color: #747A80; font-size: 16px;">Promoción de la buena salud digestiva en los niños</p>
+                <button class="button-friso" type="button" name="button">Saber más</button>
+              </div>
+            </div>
+            <div class="" style="background-color: #1F3F85; height: 250px; width: 300px;">
+              <a href="https://www.friso.com.mx/">
+                <img src="../assets/img/friso/Friso_StaticBanner_300Χ250_08_2019_CL_AlwaysOn_ComfortNextv2.png" alt="bannerFriso">
+              </a>
+            </div>
           </div>
         </div>
 
@@ -609,7 +621,7 @@
                 <a class="nav-link" id="pills-graficas-crecimiento-tab" data-toggle="pill" href="#pills-graficas-crecimiento" role="tab" aria-controls="pills-graficas-crecimiento" aria-selected="false">Gráficas de crecimiento</a>
               </li>
               <li class="nav-item flex-sm-fill">
-                <a class="nav-link" id="pills-friso-tab" data-toggle="pill" href="#pills-friso" role="tab" aria-controls="pills-friso" aria-selected="false">Próximamente</a>
+                <a class="nav-link" id="pills-friso-tab" data-toggle="pill" href="#pills-friso" role="tab" aria-controls="pills-friso" aria-selected="false"><div class=""></div></a>
               </li>
             </ul>
             <div class="tab-content" id="pills-tabContent-menuPaciente">
@@ -1129,10 +1141,10 @@
                                   <button type="button" class="list-group-item" id="nueva_consulta-tab" data-toggle="tab" href="#nuevaConsulta" role="tab" aria-controls="nuevaConsulta" aria-selected="false"><i class="fas fa-calendar-alt color-immer" aria-hidden="true"></i> Nueva consulta</button>
                                 </div>
                                 <div class="list-group mb-2">
-                                  <button type="button" class="list-group-item" id="consulta_pend-tab" data-toggle="tab" href="#consulta_pend" role="tab" aria-controls="consulta_pend" aria-selected="false"><i class="fas fa-calendar-alt color-immer" aria-hidden="true"></i> Consulta pendiente</button>
+                                  <button type="button" class="list-group-item d-none" id="consulta_pend-tab" data-toggle="tab" href="#consulta_pend" role="tab" aria-controls="consulta_pend" aria-selected="false"><i class="fas fa-calendar-alt color-immer" aria-hidden="true"></i> Consulta pendiente</button>
                                 </div>
                                 <div class="list-group mb-2">
-                                  <button type="button" class="list-group-item" id="consulta_confirm-tab" data-toggle="tab" href="#consulta_confirm" role="tab" aria-controls="consulta_confirm" aria-selected="false"><i class="fas fa-calendar-alt color-immer" aria-hidden="true"></i> Próxima consulta</button>
+                                  <button type="button" class="list-group-item d-none" id="consulta_confirm-tab" data-toggle="tab" href="#consulta_confirm" role="tab" aria-controls="consulta_confirm" aria-selected="false"><i class="fas fa-calendar-alt color-immer" aria-hidden="true"></i> Próxima consulta</button>
                                 </div>
                                 <div class="list-group" id="list-consultation">
                                   <button type="button" class="list-group-item" id="consultationResume-tab" data-toggle="tab" href="#consultationResume" role="tab" aria-controls="consultationResume" aria-selected="false"><i class="fas fa-file-medical"></i> Consulta <span>31/01/2019</span></button>
