@@ -148,9 +148,11 @@ span.badge.pend_success {
   max-height: 400px;
   overflow-y: scroll;
 }
+#pills-friso::-webkit-scrollbar,
 #container_my_kids::-webkit-scrollbar {
 	width: 4px;
 }
+#pills-friso::-webkit-scrollbar-thumb,
 #container_my_kids::-webkit-scrollbar-thumb {
 	background-color: #b9b9b950;
 	border-radius: 5px;
@@ -595,6 +597,8 @@ span.badge.pend_success {
   background-color: #FFFFFF;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05);
   height: calc(100vh - 137px);
+  overflow: scroll;
+  overflow-x: hidden;
 }
 #pills-tab-menuPaciente {
   font-size: 1.25rem;
